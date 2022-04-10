@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<meta charset='utf-8'>
+
+<head>
+    <script src="lib/js/p5.js"></script>
+    <script src="lib/js/jquery.js"></script>
+    <link rel="stylesheet" href="css\style.css">
+
+</head>
+
+<body>
+    <script src="js/index.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/back.js"></script>
+    <script src="js/star.js"></script>
+    <!-- <script src="js/fib.js"></script> -->
+    <header>
+    </header>
+
+    <main>
+        <h1 class="title-delta"><span style="color: springgreen;">Δ</span> Delta</h1>
+        <form action="" onsubmit="search();return false;">
+            <div id="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" id="search-input" placeholder="検索" autocomplete="off" onInput="fib.fibResize()" />
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
